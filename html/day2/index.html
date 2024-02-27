@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Demo</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #special {
+            font-weight: bold;
+        }
+
+        /* Class Selector */
+        .important {
+            font-size: 24px;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: green;
+        }
+
+        /* Child Selector */
+        ul > li {
+            list-style-type: none;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            font-style: italic;
+        }
+
+        /* Attribute Selector */
+        a[href="https://www.example.com"] {
+            color: red;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            color:rgb(20, 210, 45);
+        }
+
+        /* Pseudo-element Selector */
+        p::first-line {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS Selector Demo</h1>
+    <p id="special">This paragraph has a special ID.</p>
+    <p class="important">This paragraph is important.</p>
+    <div>
+        <p>This is a paragraph inside a div.</p>
+    </div>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    <h2>A Subheading</h2>
+    <p>This paragraph follows the subheading.</p>
+    <a href="https://www.google.com">Link to Example</a>
+</body>
+</html>
